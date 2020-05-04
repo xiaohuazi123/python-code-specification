@@ -264,10 +264,12 @@ from __future__ import absolute_import
 
 
 
-**代码格式化利器-> Black**  
-不管是写单个Python文件或者写Python项目，尽量使用Black格式化你的代码   
+**代码格式化利器-> Black和isort**  
+不管是写单个Python文件或者写Python项目，尽量使用Black和isort格式化你的代码   
 请点击下面链接查看使用详情  
 [代码格式化工具Black](https://github.com/psf/black "超流行的Python代码格式化工具！")
+[import格式化工具isort](https://github.com/timothycrosley/isort)
+
 
 
   
