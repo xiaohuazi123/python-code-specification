@@ -269,11 +269,3 @@ from __future__ import absolute_import
 
 
   
-
-
-代码规范综合参考：  
-https://docs.saltstack.com/en/latest/topics/development/conventions/style.html#coding-style  
-https://jumpserver.readthedocs.io/zh/master/python_style_guide.html  
-  
-    
-第一版于：2020.1.18
