@@ -262,7 +262,7 @@ from __future__ import absolute_import
 
 
 
-**代码格式化利器- Black**  
+**代码格式化利器-> Black**  
 不管是写单个Python文件或者写Python项目，尽量使用Black格式化你的代码   
 请点击下面链接查看使用详情  
 [代码格式化工具Black](https://github.com/psf/black "超流行的Python代码格式化工具！")
