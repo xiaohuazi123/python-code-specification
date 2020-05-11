@@ -23,8 +23,18 @@ assignees: ''
   
   
 ##### 错误日志
+<details>
+  <summary>日志信息</summary>
+(请提供有用的日志信息)   
 
+```
+日志信息粘贴在这里
+```  
+</details>  
+  
+  
 
+  
 ##### 其他
   
 
