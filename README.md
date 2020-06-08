@@ -206,7 +206,6 @@ import 你自己写的模块
 
   
 
-
 ## 字符编码解码 
 ### Python2和Python3都要三码合一，（源码文件编码，外部文件编码，字符串变量编码都要统一）  
 **下面规范为了对系统的改动最少，达到最佳效果**
@@ -249,20 +248,32 @@ with codecs.open(r'D:\1.txt', 'r', encoding='utf-8') as fd:
 
 字符串变量  
 - sys.getdefaultencoding()，str类型默认是utf-8编码的字符串类型，getdefaultencoding/setdefaultencoding在py3貌似都已经废弃
-- 编码时候统一使用utf-8编码和解码
+- 编码时候统一使用utf-8编码和解码 
+ 
 ```Python  
 xx.encode('utf-8')
-xx.decode('utf-8')
+
+xx.decode('utf-8')  
+#或
+str(xx, encoding='utf-8')
 ```
 
 外部文件  
 open函数增加了encoding等参数，指定编码utf-8
+
 ```Python
 with open(r'D:\1.txt', 'r', encoding='utf-8') as fd:  
 ```
   
-对于Windows平台比较麻烦，Windows平台下很多文件的编码格式都是GBK，用utf-8解码会UnicodeDecodeError  
+对于Windows平台比较麻烦，Windows平台下的默认编码格式是gbk，用utf-8解码会UnicodeDecodeError  
 另外，在命令行下，Windows平台的默认编码是gbk，Linux平台的默认编码是utf-8
+  
+  
+参考：  
+https://blog.csdn.net/weixin_33881140/article/details/91470873  
+https://blog.csdn.net/aidanmo/article/details/86513977  
+https://www.dongwm.com/post/109/
+  
   
   
 
