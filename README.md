@@ -92,13 +92,15 @@ Python 严格采用4个空格的缩进, 任何 Python 代码都必须遵守此�
 使用 `foo not in bar`, 而不是 `not foo in bar`。
 
 
+
 ### 命名约定
-1. 类/异常名称：采用骆驼拼写法(CamelCase), 首字母缩略词保持大写不变(HTTPWriter, 而不是 HttpWriter)。
+1. 类/异常名称：采用骆驼拼写法(CamelCase), 首字母缩略词保持大写不变(HTTPWriter, 而不是 HttpWriter)，保护类加单下划线，` _class_name
+`
 2. 变量名：小写，必须至少要有三个字符，单词之间用下划线分隔，例如：quote_identifier，保护变量加单下划线，` _variable_name
 `
 3. 方法与函数名：小写，单词之间用下划线分隔，例如：quote_identifier，保护方法/函数加单下划线，` _function_name
 `
-4. 常量：全大写，单词之间用下划线分隔，例如：`RAW_STRING`
+4. 常量：全大写，单词之间用下划线分隔，例如：`RAW_STRING`，保护常量加单下划线，`_RAW_STRING`
 5. 预编译的正则表达式：`name_re`。
 6. 受保护的元素以一个下划线为前缀。
 7. 不要使用Python关键字(keywords)作为类名称、变量名、方法名、函数名
@@ -107,8 +109,8 @@ Python 严格采用4个空格的缩进, 任何 Python 代码都必须遵守此�
 
 
 ### 函数和方法的参数：
-1. 类方法：cls 为第一个参数。
-2. 实例方法：self 为第一个参数。
+1. 类方法：cls 为第一个参数，其他参数小写，单词之间用下划线分隔，例如：quote_identifier
+2. 实例方法：self 为第一个参数，其他参数小写，单词之间用下划线分隔，例如：quote_identifier
 3. property函数中使用匿名函数(lambdas)时, 匿名函数的第一个参数可以用 x 替代,
    例如：`display_name = property(lambda x: x.real_name or x.username)`。
 
